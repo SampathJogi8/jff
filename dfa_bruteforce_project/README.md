@@ -1,4 +1,4 @@
-DFA Brute-force Detection (v7 rebuilt)
+DFA Brute-force Detection 
 
 Features:
 - Simulated Redis (state_store.py) for scalable state management
