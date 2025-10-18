@@ -23,9 +23,9 @@ DEFAULT_THRESHOLD = 3
 TIME_WINDOW = 60
 EMAIL_ENABLED = True  # ready; configure EMAIL_CONFIG below
 EMAIL_CONFIG = {
-    'sender': 'sampathjogipusala123@gmail.com',
-    'receiver': 'eniya2238@gmail.com',
-    'app_password': 'gqhf rijx gnjn pdvt',
+    'sender': 'sender@gmail.com',
+    'receiver': 'receiver@gmail.com',
+    'app_password': 'aaaa',
     'smtp_server': 'smtp.gmail.com',
     'smtp_port': 465
 }
