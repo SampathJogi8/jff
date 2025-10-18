@@ -1,0 +1,132 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f8fc;
+  color: #333;
+}
+
+header .hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #0078d4, #00a2ed);
+  color: white;
+  padding: 40px 30px;
+  flex-wrap: wrap;
+}
+
+.hero-text h1 {
+  font-size: 32px;
+  margin: 0;
+}
+.hero-text .badge {
+  background-color: white;
+  color: #0078d4;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.hero-text button {
+  background-color: white;
+  color: #0078d4;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.hero-graphic .brain-icon {
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+main {
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.typing-card input {
+  width: 100%;
+  font-size: 16px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.controls button {
+  margin-right: 10px;
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.controls button:hover {
+  background-color: #005a9e;
+}
+
+.status {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.risk-card #riskScore {
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+.risk-card .pending {
+  background-color: #ccc;
+  color: white;
+}
+.risk-card .low {
+  background-color: #4caf50;
+  color: white;
+}
+.risk-card .medium {
+  background-color: #ff9800;
+  color: white;
+}
+.risk-card .high {
+  background-color: #f44336;
+  color: white;
+}
+
+.metrics {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.metric {
+  font-size: 16px;
+  color: #0078d4;
+}
+.metric strong {
+  font-size: 24px;
+  display: block;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #eee;
+  margin-top: 40px;
+}
