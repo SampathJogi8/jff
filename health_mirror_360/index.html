@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Health Mirror 360 — Personalized Wellness Coach</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Health Mirror 360</h1>
+      <p class="tag">Your personalized wellness coach — daily score, tips & fun goals 🎯</p>
+    </header>
+
+    <main>
+      <section class="input-panel card">
+        <h2>Enter today's data</h2>
+        <div class="grid">
+          <label>Sleep hours
+            <input id="sleep" type="number" min="0" max="24" step="0.1" value="7">
+          </label>
+          <label>Water (ml)
+            <input id="water" type="number" min="0" value="1500">
+          </label>
+          <label>Steps walked
+            <input id="steps" type="number" min="0" value="5000">
+          </label>
+          <label>Meals (1-5 healthy)
+            <input id="meals" type="number" min="0" max="5" value="3">
+          </label>
+          <label>Mood (1-5)
+            <input id="mood" type="number" min="1" max="5" value="3">
+          </label>
+          <label>Diet notes
+            <input id="dietNotes" type="text" placeholder="e.g., skipped breakfast, snacked late">
+          </label>
+        </div>
+
+        <div class="actions">
+          <button id="calcBtn" class="primary">Calculate Score</button>
+          <button id="resetBtn">Reset</button>
+        </div>
+      </section>
+
+      <section class="result-panel card">
+        <div class="score-row">
+          <div class="score-circle" id="scoreCircle">—</div>
+          <div class="score-text">
+            <h3 id="scoreHeader">Daily Health Score</h3>
+            <p id="scoreDesc">Enter data and press Calculate.</p>
+            <p id="tipSummary" class="tip-summary"></p>
+          </div>
+        </div>
+
+        <div class="tips" id="tipsContainer"></div>
+
+        <div class="gamification card small">
+          <h4>Gamification</h4>
+          <p id="xpText">XP: <span id="xp">0</span> ● Level: <span id="level">1</span></p>
+          <div id="badges" class="badges"></div>
+        </div>
+      </section>
+
+      <section class="chart-panel card">
+        <h2>Weekly Wellness (simulated)</h2>
+        <canvas id="weekChart" height="120"></canvas>
+        <div class="legend">
+          <span><i class="dot green"></i> Good</span>
+          <span><i class="dot orange"></i> Moderate</span>
+          <span><i class="dot red"></i> Needs improvement</span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small>Health Mirror 360 — demo app. Tips are for educational purposes only.</small>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
